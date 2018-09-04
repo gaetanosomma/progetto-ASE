@@ -1,0 +1,80 @@
+# clock pin for Basys Board
+NET "clock" LOC = "p54"; # Bank = 2, Signal name = CLK1
+
+#NET "CLK2" LOC = "p53"; # Bank = 2, Signal name = CLK1
+
+#NET "start" CLOCK_DEDICATED_ROUTE = FALSE; 
+
+# Pin assignment for DispCtl
+# Connected to Basys onBoard 7seg display
+
+NET "cathodes<0>" LOC = "p25"; # Bank = 3, Signal name = CA
+NET "cathodes<1>" LOC = "p16"; # Bank = 3, Signal name = CB
+NET "cathodes<2>" LOC = "p23"; # Bank = 3, Signal name = CC
+NET "cathodes<3>" LOC = "p21"; # Bank = 3, Signal name = CD
+NET "cathodes<4>" LOC = "p20"; # Bank = 3, Signal name = CE
+NET "cathodes<5>" LOC = "p17"; # Bank = 3, Signal name = CF
+NET "cathodes<6>" LOC = "p83"; # Bank = 1, Signal name = CG
+NET "cathodes<7>" LOC = "p22"; # Bank = 3, Signal name = DP
+#
+NET "anodes<3>" LOC = "p26"; # Bank = 3, Signal name = AN3
+NET "anodes<2>" LOC = "p32"; # Bank = 3, Signal name = AN2
+NET "anodes<1>" LOC = "p33"; # Bank = 3, Signal name = AN1
+NET "anodes<0>" LOC = "p34"; # Bank = 3, Signal name = AN0
+#
+## Pin assignment for LEDs
+#NET "Led<7>" LOC = "p2" ; # Bank = 3, Signal name = LD7
+#NET "Led<6>" LOC = "p3" ; # Bank = 3, Signal name = LD6
+#NET "Led<5>" LOC = "p4" ; # Bank = 3, Signal name = LD5
+#NET "Led<4>" LOC = "p5" ; # Bank = 3, Signal name = LD4
+#NET "Led<3>" LOC = "p7" ; # Bank = 3, Signal name = LD3
+#NET "Led<2>" LOC = "p8" ; # Bank = 3, Signal name = LD2
+#NET "x_out" LOC = "p14" ; # Bank = 3, Signal name = LD1
+NET "Comparation" LOC = "p15" ; # Bank = 3, Signal name = LD0
+#
+## Pin assignment for SWs
+NET "byte<7>" LOC = "p6"; # Bank = 3, Signal name = SW7
+NET "byte<6>" LOC = "p10"; # Bank = 3, Signal name = SW6
+NET "byte<5>" LOC = "p12"; # Bank = 3, Signal name = SW5
+NET "byte<4>" LOC = "p18"; # Bank = 3, Signal name = SW4
+NET "byte<3>" LOC = "p24"; # Bank = 3, Signal name = SW3
+NET "byte<2>" LOC = "p29"; # Bank = 3, Signal name = SW2
+NET "byte<1>" LOC = "p36"; # Bank = 3, Signal name = SW1
+NET "byte<0>" LOC = "p38"; # Bank = 2, Signal name = SW0
+#
+## Pin assignment for BTNs
+NET "b_3" LOC = "p41"; # Bank = 2, Signal name = BTN3
+
+#NET "reset" LOC = "p41"; # Bank = 2, Signal name = BTN3
+
+NET "b_2" LOC = "p47"; # Bank = 2, Signal name = BTN2
+
+#NET "start" LOC = "p47"; # Bank = 2, Signal name = BTN2
+
+NET "b_1" LOC = "p48"; # Bank = 2, Signal name = BTN1
+
+#NET "load_y" LOC = "p48"; # Bank = 2, Signal name = BTN1
+
+NET "b_0" LOC = "p69"; # Bank = 2, Signal name = BTN0
+
+#NET "RST_top"	LOC = "p69";
+
+# Loop back/demo signals
+# Pin assignment for PS2
+#NET "PS2C_top"    LOC = "p96"  | DRIVE = 2  | PULLUP ; # Bank = 1, Signal name = PS2C
+#NET "PS2D_top"    LOC = "p97"  | DRIVE = 2  | PULLUP ; # Bank = 1, Signal name = PS2D
+## Pin assignment for VGA
+
+#NET "HSYNC"   LOC = "p39"     | DRIVE = 2  | PULLUP ; # Bank = 2, Signal name = HSYNC
+#NET "VSYNC"   LOC = "p35"     | DRIVE = 2  | PULLUP ; # Bank = 3, Signal name = VSYNC
+#NET "vgaRed<2>"  LOC = "p67"  | DRIVE = 2  | PULLUP ; # Bank = 2, Signal name = RED2
+#NET "vgaRed<1>"  LOC = "p68"  | DRIVE = 2  | PULLUP ; # Bank = 2, Signal name = RED1
+#NET "vgaRed<0>"  LOC = "p70"  | DRIVE = 2  | PULLUP ; # Bank = 2, Signal name = RED0
+#NET "vgaGreen<2>"  LOC = "p50" | DRIVE = 2  | PULLUP ; # Bank = 2, Signal name = GRN2
+#NET "vgaGreen<1>"  LOC = "p51" | DRIVE = 2  | PULLUP ; # Bank = 2, Signal name = GRN1 
+#NET "vgaGreen<0>"  LOC = "p52" | DRIVE = 2  | PULLUP ; # Bank = 2, Signal name = GRN0 
+#NET "vgaBlue<1>"  LOC = "p43"  | DRIVE = 2  | PULLUP ; # Bank = 2, Signal name = BLU2 
+#NET "vgaBlue<0>"  LOC = "p44"  | DRIVE = 2  | PULLUP ; # Bank = 2, Signal name = BLU1
+ 
+#NET "rs232_trx" LOC = "p92";
+
